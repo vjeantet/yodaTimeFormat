@@ -15,7 +15,7 @@ func ParseInLocation(format, value, timezone string) (time.Time, error) {
 }
 
 func ParseInLocationDirect(format, value string, timezone *time.Location) (time.Time, error) {
-	return time.ParseInLocation(getLayout(format), value, timezone)
+	return time.ParseInLocation(GetLayout(format), value, timezone)
 }
 
 // Parse parses a value into a time.time
